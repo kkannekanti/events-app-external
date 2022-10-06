@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+  <title>Team LunchTime Website</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styler.css">
+
+    <style>
+        h1{
+            color:red;
+            font-size:20px;
+    }
+    </style>
+</head>
+<body> 
+  <div class = "container-fluid">
+      <h1>Welcome to LunchTime application</h1>
+    {{{body}}}
+</div>
+<div class = "container-fluid">
+  <h2>Add an event</h2>
+    <form action="/event" method="post">
+       title: <input name="title" type="text" /> <br />
+       description: <input name="description" type="text" /> <br />
+       location: <input name="location" type="text" /> <br />
+       <br />
+        <input type="submit" name="submit" value="submit" />
+    </form>
+  </div>
+</body>
+</html>
